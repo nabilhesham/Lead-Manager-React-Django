@@ -13,7 +13,7 @@ const PrivteRoute = ({ component: Component, auth, ...rest }) => {
         } else if (!auth.isAuthenticated) {
           return <Redirect to="/login" />;
         } else {
-          return <component {...props} />;
+          return <Component {...props} />;
         }
       }}
     />
